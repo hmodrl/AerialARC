@@ -1956,7 +1956,7 @@
             </div>
             
             <div class="stat">
-              <div class="stat-number">Weekends</div>
+              <div class="stat-number">Fri-Sat</div>
               <div class="stat-label">Available Support</div>
             </div>
             
@@ -1998,8 +1998,7 @@
               <p>+973 3420 3541</p>
               <div class="availability-info">
                 <p><strong>Available Hours:</strong></p>
-                <p>Weekends Only</p>
-                <p>12:00 AM - 9:00 PM (GMT+3)</p>
+                <p>Friday 12:00 PM - Saturday 9:00 PM (GMT+3)</p>
               </div>
             </div>
           </div>
@@ -2024,7 +2023,7 @@
               <p>AI Assistant Available 24/7</p>
               <div class="availability-info">
                 <p><strong>Instant Responses:</strong> Our AI assistant can answer most questions immediately</p>
-                <p><strong>Human Support:</strong> Available weekends as listed above</p>
+                <p><strong>Human Support:</strong> Friday 12:00 PM - Saturday 9:00 PM (GMT+3)</p>
               </div>
             </div>
           </div>
@@ -2063,7 +2062,7 @@
             
             <div class="form-group">
               <div class="availability-info" style="margin-top: 10px;">
-                <p><i class="fas fa-info-circle"></i> <strong>Response Time:</strong> We respond to all inquiries within 24-48 hours during our weekend support hours.</p>
+                <p><i class="fas fa-info-circle"></i> <strong>Response Time:</strong> We respond to all inquiries within 24-48 hours during our support hours (Friday 12:00 PM - Saturday 9:00 PM).</p>
               </div>
             </div>
             
@@ -2127,7 +2126,7 @@
       </div>
       
       <div class="copyright">
-        <p>&copy; 2025 AERIALARC. All rights reserved. | Weekend Support: 12AM - 9PM GMT+3</p>
+        <p>&copy; 2025 AERIALARC. All rights reserved. | Support Hours: Friday 12:00 PM - Saturday 9:00 PM (GMT+3)</p>
       </div>
     </div>
   </footer>
@@ -2280,7 +2279,7 @@
         }
       },
       support: {
-        hours: "Weekends: 12:00 AM - 9:00 PM (GMT+3)",
+        hours: "Friday 12:00 PM - Saturday 9:00 PM (GMT+3)",
         response: "24-48 hours during support hours",
         emergency: "aerialarc.supp@gmail.com for urgent matters",
         aiAvailability: "24/7 instant responses"
@@ -2533,7 +2532,7 @@
           
         case '/support':
           return {
-            text: "🛎️ **Human Support Request**\n\nI'll connect you with our support team. Meanwhile:\n\n📞 **Call:** +973 3420 3541\n📧 **Email:** aerialarc.supp@gmail.com\n⏰ **Hours:** Weekends 12AM-9PM GMT+3\n\nOur team responds within 24-48 hours during support hours.",
+            text: "🛎️ **Human Support Request**\n\nI'll connect you with our support team. Meanwhile:\n\n📞 **Call:** +973 3420 3541\n📧 **Email:** aerialarc.supp@gmail.com\n⏰ **Hours:** Friday 12:00 PM - Saturday 9:00 PM (GMT+3)\n\nOur team responds within 24-48 hours during support hours.",
             askForOperator: true,
             suggestions: ["Ask AI instead", "Check pricing", "Product info"]
           };
@@ -2553,7 +2552,7 @@
           
         case '/status':
           return {
-            text: "📊 **Service Status**\n\n✅ **All Services Operational**\n\n• **Boosting:** Normal queue (24-72h)\n• **Accounts:** In stock, instant delivery\n• **NitroMOD:** Latest v2.1.3 available\n• **Support:** AI 24/7, Human weekends\n• **Payments:** All methods working\n\nEverything is running smoothly! 🚀"
+            text: "📊 **Service Status**\n\n✅ **All Services Operational**\n\n• **Boosting:** Normal queue (24-72h)\n• **Accounts:** In stock, instant delivery\n• **NitroMOD:** Latest v2.1.3 available\n• **Support:** AI 24/7, Human Friday 12:00 PM - Saturday 9:00 PM (GMT+3)\n• **Payments:** All methods working\n\nEverything is running smoothly! 🚀"
           };
           
         case '/guide':
@@ -2834,7 +2833,7 @@
     
     function handleSupport(message) {
       return {
-        text: "🛠️ **Support Options:**\n\n🤖 **AI Support (24/7):**\n• Product questions\n• Pricing info\n• Order process\n• Basic troubleshooting\n\n👨‍💼 **Human Support (Weekends):**\n• Account issues\n• Payment problems\n• Complex technical issues\n• Refund requests\n\n📞 **Contact:** +973 3420 3541\n📧 **Email:** aerialarc.supp@gmail.com",
+        text: "🛠️ **Support Options:**\n\n🤖 **AI Support (24/7):**\n• Product questions\n• Pricing info\n• Order process\n• Basic troubleshooting\n\n👨‍💼 **Human Support:** Friday 12:00 PM - Saturday 9:00 PM (GMT+3)\n• Account issues\n• Payment problems\n• Complex technical issues\n• Refund requests\n\n📞 **Contact:** +973 3420 3541\n📧 **Email:** aerialarc.supp@gmail.com",
         suggestions: ["Technical issue", "Payment problem", "Account help"]
       };
     }
@@ -3040,7 +3039,7 @@
         const btn = document.getElementById('operatorTransferBtn');
         if (btn) {
           btn.addEventListener('click', () => {
-            const message = "👨‍💼 **Connecting to Human Support**\n\nI've notified our support team. An operator will contact you as soon as possible during our weekend support hours (12AM-9PM GMT+3).\n\nFor immediate assistance:\n• Call: +973 3420 3541\n• Email: aerialarc.supp@gmail.com\n\nThank you for your patience!";
+            const message = "👨‍💼 **Connecting to Human Support**\n\nI've notified our support team. An operator will contact you as soon as possible during our support hours (Friday 12:00 PM - Saturday 9:00 PM (GMT+3)).\n\nFor immediate assistance:\n• Call: +973 3420 3541\n• Email: aerialarc.supp@gmail.com\n\nThank you for your patience!";
             addAIMessage(message);
             div.remove();
           });
@@ -3169,7 +3168,7 @@
           const product = btn.dataset.product;
           // Direct navigation for Boosting product
           if (product === 'boosting') {
-            window.location.href = 'RLboosting.html';
+            window.location.href = 'ChooseRLBoosting.html';
             return;
           }
           // Direct navigation to NitroMOD page
@@ -3208,7 +3207,7 @@
           const email = document.getElementById('email').value;
           const product = document.getElementById('product').value;
           
-          alert(`Thank you, ${name}! Your inquiry about ${product || 'our products'} has been received. We'll get back to you at ${email} within 24-48 hours during our weekend support hours.`);
+          alert(`Thank you, ${name}! Your inquiry about ${product || 'our products'} has been received. We'll get back to you at ${email} within 24-48 hours during our support hours (Friday 12:00 PM - Saturday 9:00 PM).`);
           contactForm.reset();
         });
       }
@@ -3297,7 +3296,7 @@
             break;
           case 'order':
             // Navigate directly to the Rocket League boosting order page
-            window.location.href = 'RLboosting.html';
+            window.location.href = 'ChooseRLBoosting.html';
             return;
           case 'support':
             query = "I need support with a service";
