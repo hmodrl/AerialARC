@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AERIALARC • Rocket League Tournament Boosting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root{
+      --pink:#ff3b8d;
+      --pink-dark:#e60073;
+      --bg:#000;
+      --card:rgba(20,20,20,.95);
+      --text:#fff;
+      --muted:rgba(255,255,255,.7);
+      --radius:18px;
+      --transition:all .35s cubic-bezier(.4,0,.2,1);
+      --glow-pink:0 0 40px rgba(255,59,141,.45);
+      --glow-red:0 0 40px rgba(255,60,60,.55);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Inter,system-ui,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+    .bg-glow{
+      position:fixed;inset:0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255,59,141,.08), transparent 60%),
+        radial-gradient(circle at 80% 70%, rgba(255,59,141,.05), transparent 60%);
+      z-index:0;
+    }
+    .container{
+      position:relative;
+      z-index:1;
+      max-width:1200px;
+      margin:0 auto;
+      padding:80px 20px 60px;
+    }
+    h1{
+      font-size:clamp(2.4rem,6vw,4rem);
+      font-weight:900;
+      background:linear-gradient(135deg,var(--pink),#ff9fc5,var(--pink-dark));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      text-align:center;
+      margin-bottom:16px;
+    }
+    .subtitle{
+      text-align:center;
+      color:var(--muted);
+      max-width:720px;
+      margin:0 auto 70px;
+      font-size:1.15rem;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:26px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:34px 28px 38px;
+      border:1px solid rgba(255,59,141,.25);
+      transition:var(--transition);
+      position:relative;
+      overflow:hidden;
+      text-align:center;
+    }
+    .card::after{
+      content:"";
+      position:absolute;inset:0;
+      background:linear-gradient(135deg,rgba(255,59,141,.18),transparent 60%);
+      opacity:0;
+      transition:var(--transition);
+    }
+    .card:hover{transform:translateY(-10px) scale(1.02);box-shadow:var(--glow-pink);border-color:var(--pink)}
+    .card:hover::after{opacity:1}
+    .icon{
+      width:72px;height:72px;margin:0 auto 22px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--pink),var(--pink-dark));
+      font-size:2rem;box-shadow:0 10px 30px rgba(255,59,141,.45);
+    }
+    .rank{font-size:1.35rem;font-weight:800;margin-bottom:10px}
+    .rank.red{color:#ff4d4d;text-shadow:0 0 12px rgba(255,77,77,.8)}
+    .rank.pink{color:#ff3b8d;text-shadow:0 0 14px rgba(255,59,141,.9)}
+    .price{font-size:2rem;font-weight:900;color:#00ff88;margin-bottom:18px}
+    .note{font-size:.9rem;color:var(--muted);margin-bottom:22px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:14px 30px;border-radius:14px;
+      background:linear-gradient(135deg,var(--pink),var(--pink-dark));
+      color:#fff;font-weight:800;text-decoration:none;
+      letter-spacing:.5px;transition:var(--transition)
+    }
+    .btn:hover{transform:scale(1.06)}
+    footer{text-align:center;margin-top:70px;color:rgba(255,255,255,.45);font-size:.85rem}
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <main class="container">
+    <h1>Tournament Boosting</h1>
+    <p class="subtitle">Professional Rocket League tournament boosting. Fast, secure, and handled by high-ranked players.</p>
+
+    <section class="grid">
+      <div class="card">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="rank">Bronze Tournament</div>
+        <div class="price">$4.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="rank">Silver Tournament</div>
+        <div class="price">$5.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="rank">Gold Tournament</div>
+        <div class="price">$7.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="rank">Platinum Tournament</div>
+        <div class="price">$8.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="rank">Diamond Tournament</div>
+        <div class="price">$10.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-crown"></i></div>
+        <div class="rank">Champion Tournament</div>
+        <div class="price">$14.99</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-fire"></i></div>
+        <div class="rank">Grand Champion Tournament</div>
+        <div class="price">$34.99</div>
+        <div class="note">Default</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-fire"></i></div>
+        <div class="rank red">Grand Champion (3 In A Row)</div>
+        <div class="price">$49.99</div>
+        <div class="note">Red Title</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-bolt"></i></div>
+        <div class="rank">SuperSonic Legend</div>
+        <div class="price">$59.99</div>
+        <div class="note">Default</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon"><i class="fas fa-bolt"></i></div>
+        <div class="rank pink">SuperSonic Legend (3 In A Row)</div>
+        <div class="price">$79.99</div>
+        <div class="note">Pink Title</div>
+        <a class="btn" href="Payment Methods.html">Order Now</a>
+      </div>
+    </section>
+
+    <footer>© 2025 AERIALARC • Rocket League Tournament Boosting</footer>
+  </main>
+</body>
+</html>
